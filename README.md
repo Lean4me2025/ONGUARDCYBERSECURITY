@@ -1,10 +1,17 @@
-# OnGuard Cybersecurity — Landing Page
+# OnGuard Cybersecurity — Landing Page (Polished)
 
-Files for deployment via GitHub + Vercel.
+This is the polished landing page for OnGuard Cybersecurity, with styled content and sections.
+
+## Sections
+- Hero with tagline and CTA
+- Framework (principles without revealing proprietary methods)
+- Industries Served
+- Contact form (Formspree placeholder)
+- Footer
 
 ## Deploy
-1. Upload these files into your GitHub repo.
-2. Connect repo to Vercel, framework: Other (static).
-3. Deploy and point domain DNS.
+1. Upload into GitHub repo (onguardcybersecurity).
+2. Vercel auto-deploys.
+3. Update DNS already configured for custom domain.
 
 Generated 2025-08-22

@@ -1,21 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>OnGuard Cybersecurity — Zero-Impact Breach™ Protection</title>
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <meta name="description" content="OnGuard Cybersecurity helps organizations stop attacks from succeeding. We design systems where breaches have zero business impact.">
+  <link rel="icon" href="assets/favicon-32.png">
   <link rel="apple-touch-icon" href="assets/favicon-180.png">
+  <style>
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#0b132b;color:#e6f1ff;line-height:1.6}
+    header{background:#111827;padding:16px;display:flex;align-items:center;justify-content:space-between}
+    header img{height:32px;margin-right:8px}
+    nav a{margin:0 10px;color:#5bc0be;text-decoration:none}
+    nav a:hover{text-decoration:underline}
+    .hero{padding:60px 20px;text-align:center;max-width:900px;margin:auto}
+    .hero h1{font-size:2.5em;margin-bottom:10px}
+    .hero p{font-size:1.2em;color:#9fb3c8}
+    .cta{margin-top:20px}
+    .cta a{background:#5bc0be;color:#001219;padding:12px 20px;border-radius:6px;font-weight:bold;margin:5px;display:inline-block}
+    section{padding:50px 20px;max-width:1000px;margin:auto}
+    h2{text-align:center;margin-bottom:20px;color:#5bc0be}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+    .card{background:#1c2541;padding:20px;border-radius:8px;box-shadow:0 4px 12px rgba(0,0,0,.4)}
+    .card h3{margin-top:0;color:#5bc0be}
+    footer{background:#111827;padding:20px;text-align:center;color:#9fb3c8;font-size:.9em}
+    form input,form textarea{width:100%;padding:10px;margin:8px 0;border-radius:6px;border:none}
+    form button{background:#5bc0be;color:#001219;padding:12px 20px;border:none;border-radius:6px;font-weight:bold;cursor:pointer}
+  </style>
 </head>
 <body>
   <header>
-    <img src="assets/logo.svg" alt="OnGuard logo" style="width:40px;height:40px;vertical-align:middle">
-    <strong>OnGuard Cybersecurity</strong>
+    <div style="display:flex;align-items:center">
+      <img src="assets/logo.svg" alt="OnGuard logo"><strong>OnGuard Cybersecurity</strong>
+    </div>
+    <nav>
+      <a href="#framework">Framework</a>
+      <a href="#industries">Industries</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
-  <main>
+
+  <div class="hero">
     <h1>Zero-Impact Breach™ Protection</h1>
     <p>Attacks will happen. We design systems where they don’t matter.</p>
-    <p>Contact us: <a href="mailto:drew@onguardcybersecurity.com">drew@onguardcybersecurity.com</a></p>
-  </main>
+    <div class="cta">
+      <a href="#contact">Request a Readiness Review</a>
+      <a href="#framework">Explore Our Framework</a>
+    </div>
+  </div>
+
+  <section id="framework">
+    <h2>Our Framework</h2>
+    <div class="grid">
+      <div class="card"><h3>Minimize Blast Radius</h3><p>Segmented architectures and isolation ensure intrusions stay contained.</p></div>
+      <div class="card"><h3>Verified Trust</h3><p>Identity-first access, least privilege, and continuous validation.</p></div>
+      <div class="card"><h3>Resilient by Design</h3><p>Rapid recovery, immutable backups, and continuity-first thinking.</p></div>
+      <div class="card"><h3>Surface Discipline</h3><p>Reduce entry points, enforce hygiene, and shrink the attack surface.</p></div>
+      <div class="card"><h3>Signal Over Noise</h3><p>Focused monitoring that drives action, not alert fatigue.</p></div>
+      <div class="card"><h3>Prove It</h3><p>Exercises and red-team style validation without exposing client secrets.</p></div>
+    </div>
+  </section>
+
+  <section id="industries">
+    <h2>Industries We Serve</h2>
+    <div class="grid">
+      <div class="card"><h3>Healthcare & PHI</h3><p>Protecting patient data and meeting HIPAA requirements.</p></div>
+      <div class="card"><h3>Financial Services</h3><p>Ensuring continuity in highly regulated environments.</p></div>
+      <div class="card"><h3>SaaS / Cloud</h3><p>Architectures that keep customer trust intact at scale.</p></div>
+      <div class="card"><h3>Manufacturing / OT</h3><p>Safeguarding operational tech and critical infrastructure.</p></div>
+      <div class="card"><h3>Public Sector</h3><p>Compliance, resilience, and security assurance for agencies.</p></div>
+      <div class="card"><h3>SMB & Enterprise</h3><p>Right-sized protection for organizations of all sizes.</p></div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p style="text-align:center;max-width:600px;margin:auto">Tell us about your environment and request a free readiness snapshot. We’ll respond with a high-level view of strengths and gaps.</p>
+    <form action="https://formspree.io/f/your_form_id" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Work Email" required>
+      <input type="text" name="company" placeholder="Company / Organization">
+      <textarea name="message" rows="4" placeholder="Tell us about your environment"></textarea>
+      <button type="submit">Send Request</button>
+    </form>
+  </section>
+
+  <footer>
+    © <script>document.write(new Date().getFullYear())</script> OnGuard Cybersecurity. Zero-Impact Breach™ is a trademark of OnGuard Cybersecurity.
+  </footer>
 </body>
 </html>
